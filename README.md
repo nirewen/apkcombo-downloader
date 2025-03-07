@@ -27,20 +27,20 @@ Or use any other package manager like `yarn` or `pnpm`
 ## 📃 Usage
 
 ```ts
-import { APKMirrorDownloader } from "apkmirror-downloader";
+import { APKComboDownloader } from "@nirewen/apkcombo-downloader";
 
-const apkmd = new APKMirrorDownloader(
+const apkmd = new APKComboDownloader(
   { outDir: "./downloads" } // <-- 🟠 APKMDOptions (optional)
 );
 
 apkmd.download(
-  { org: "google-inc", repo: "youtube" }, // <-- App (required)
+  { org: "youtube", repo: "com.google.android.youtube" }, // <-- App (required)
   { type: "apk" } // <-- 🟣 AppOptions (optional), will be merged with APKMDOptions
 );
 
 // OR
 
-APKMirrorDownloader.download({ org: "google-inc", repo: "youtube" });
+APKComboDownloader.download({ org: "youtube", repo: "com.google.android.youtube" });
 ```
 
 🟠 **APKMDOptions Interface**
