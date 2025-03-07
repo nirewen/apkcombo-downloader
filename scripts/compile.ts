@@ -8,5 +8,5 @@ const TARGETS = [
 
 for (const target of TARGETS) {
   console.log(`🏗️  Compiling CLI for ${target}`);
-  await Bun.$`bun build --compile --target=${target} ./src/cli.ts --outfile ./out/apkmd-${target}`;
+  await Bun.$`bun build --compile --target=${target} ./src/cli.ts --outfile ./out/apkcd-${target}`;
 }

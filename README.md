@@ -30,12 +30,12 @@ Or use any other package manager like `yarn` or `pnpm`
 import { APKComboDownloader } from "@nirewen/apkcombo-downloader";
 
 const apkmd = new APKComboDownloader(
-  { outDir: "./downloads" } // <-- 🟠 APKMDOptions (optional)
+  { outDir: "./downloads" } // <-- 🟠 APKCDOptions (optional)
 );
 
 apkmd.download(
   { org: "youtube", repo: "com.google.android.youtube" }, // <-- App (required)
-  { type: "apk" } // <-- 🟣 AppOptions (optional), will be merged with APKMDOptions
+  { type: "apk" } // <-- 🟣 AppOptions (optional), will be merged with APKCDOptions
 );
 
 // OR
@@ -43,7 +43,7 @@ apkmd.download(
 APKComboDownloader.download({ org: "youtube", repo: "com.google.android.youtube" });
 ```
 
-🟠 **APKMDOptions Interface**
+🟠 **APKCDOptions Interface**
 - arch: Optional. The architecture of the application. For example, arm64-v8a, armeabi-v7a, etc.
 - dpi: Optional. The screen density of the application. For example, 240dpi, 320dpi, 480dpi, etc.
 - minAndroidVersion: Optional. The minimum Android version that the application is compatible with.
@@ -58,7 +58,7 @@ APKComboDownloader.download({ org: "youtube", repo: "com.google.android.youtube"
 - outFile: Optional. The name of the output file where the application will be saved.
 - outDir: Optional. The output directory where the application files will be stored.
 
-`AppOptions` will be merged automatically with `APKMDOptions` when download function is called.
+`AppOptions` will be merged automatically with `APKCDOptions` when download function is called.
 
 ## ⚡ CLI
 
