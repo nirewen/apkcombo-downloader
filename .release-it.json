@@ -5,18 +5,13 @@
     "pushRepo": "https://github.com/nirewen/apkcombo-downloader"
   },
   "hooks": {
-    "after:bump": [
-      "bun run build",
-      " bun run compile"
-    ]
+    "after:bump": ["bun run build", " bun run compile"]
   },
   "github": {
     "release": true,
     "releaseName": "APKCombo Downloader v${version}",
     "tokenRef": "GITHUB_TOKEN",
-    "assets": [
-      "out/*"
-    ]
+    "assets": ["out/*"]
   },
   "npm": {
     "publish": true
