@@ -8,7 +8,7 @@ import {
 } from "./types";
 
 export function withBaseUrl(endpoint: string) {
-  if (endpoint.startsWith("https://apkcombo.app")) {
+  if (endpoint.startsWith("https://")) {
     return endpoint;
   }
 
