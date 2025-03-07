@@ -11,7 +11,7 @@ import {
 } from "./index";
 import { readJsonFile } from "./utils/filesystem";
 
-console.log("\n", `*** APKMD (APKMirror Downloader) v${version} ***`, "\n");
+console.log("\n", `*** APKCD (APKCombo Downloader) v${version} ***`, "\n");
 
 yargs(process.argv.slice(2))
   .command(
