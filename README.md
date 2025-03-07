@@ -1,6 +1,6 @@
 # APKCD //APK Combo Downloader
 
-APKCD is a CLI tool that allows you to download APKs from APKCombo.app. This repo also provides a npm package [apkmirror-downloader](https://www.npmjs.com/package/apkmirror-downloader) that allows you to download APKs from APKMirror programatically.
+APKCD is a CLI tool that allows you to download APKs from APKCombo.app. This repo also provides a npm package [@nirewen/apkcombo-downloader](https://npm.im/@nirewen/apkcombo-downloader) that allows you to download APKs from APKMirror programatically.
 
 This repo and project is based on [APKMD](https://github.com/tanishqmanuja/apkmirror-downloader/) by [tanishqmanuja](https://github.com/tanishqmanuja). If you want more download options, consider using this tool.
 
@@ -29,11 +29,11 @@ Or use any other package manager like `yarn` or `pnpm`
 ```ts
 import { APKComboDownloader } from "@nirewen/apkcombo-downloader";
 
-const apkmd = new APKComboDownloader(
+const apkcd = new APKComboDownloader(
   { outDir: "./downloads" } // <-- 🟠 APKCDOptions (optional)
 );
 
-apkmd.download(
+apkcd.download(
   { org: "youtube", repo: "com.google.android.youtube" }, // <-- App (required)
   { type: "apk" } // <-- 🟣 AppOptions (optional), will be merged with APKCDOptions
 );
@@ -62,18 +62,20 @@ APKComboDownloader.download({ org: "youtube", repo: "com.google.android.youtube"
 
 ## ⚡ CLI
 
-CLI can be downloaded from [releases](https://github.com/tanishqmanuja/apkmirror-downloader/releases/latest) section.
+CLI can be downloaded from [releases](https://github.com/nirewen/apkcombo-downloader/releases/latest) section.
+
+Download for your platform and architecture. Rename the file to apkcd for convenience.
 
 Usage can be found using the following command
 
 ```bash
-apkmd --help
+apkcd --help
 ```
 
 For downloading multiple apks use apps.json file
 
 ```bash
-apkmd apps.json
+apkcd apps.json
 ```
 
 ```json
@@ -104,13 +106,16 @@ Give a ⭐️ if this project helped you!
 
 ## 👨‍💻 Projects to checkout
 
-1. 📦 [**gh-apkmirror-dl**](https://github.com/Yakov5776/gh-apkmirror-dl) by [**Yakov**](https://github.com/Yakov5776) \
+1. 📦 [**APKMD**](https://github.com/tanishqmanuja/apkmirror-downloader/) by [**tanishqmanuja**](https://github.com/tanishqmanuja) \
+   Download apps from APKCombo with ease. (Forked to create this project)
+
+2. 📦 [**gh-apkmirror-dl**](https://github.com/Yakov5776/gh-apkmirror-dl) by [**Yakov**](https://github.com/Yakov5776) \
    A GitHub Action to download APKs from Apkmirror
 
-2. 📦 [**revanced-auto-patcher**](https://github.com/Sp3EdeR/revanced-auto-patcher) by [**Sp3EdeR**](https://github.com/Sp3EdeR) \
+3. 📦 [**revanced-auto-patcher**](https://github.com/Sp3EdeR/revanced-auto-patcher) by [**Sp3EdeR**](https://github.com/Sp3EdeR) \
    A Python script to patch apps using Revanced or Revanced Extended
 
-3. 📦 [**APKEditor**](https://github.com/REAndroid/APKEditor) by [**REAndroid**](https://github.com/REAndroid)\
+4. 📦 [**APKEditor**](https://github.com/REAndroid/APKEditor) by [**REAndroid**](https://github.com/REAndroid)\
    A Java tool to edit APKs, convenient when downloading XAPKs from APKCombo
 
 ## 💀 Disclaimer
