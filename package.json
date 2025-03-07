@@ -1,0 +1,64 @@
+{
+  "name": "@nirewen/apkcombo-downloader",
+  "version": "1.0.0",
+  "description": "Download apk from apkcombo.app with ease",
+  "type": "module",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "apkmd": "dist/cli.js"
+  },
+  "keywords": [
+    "apkcombo",
+    "downloader",
+    "cli"
+  ],
+  "author": "nirewen",
+  "license": "MIT",
+  "homepage": "https://github.com/nirewen/apkcombo-downloader#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirewen/apkcombo-downloader.git"
+  },
+  "packageManager": "bun@1.2.4",
+  "scripts": {
+    "build": "bun scripts/build.ts",
+    "compile": "bun scripts/compile.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "type:check": "tsc --noEmit",
+    "lint": "bun type:check && bun format:check",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@release-it/conventional-changelog": "^10.0.0",
+    "@types/bun": "^1.2.4",
+    "@types/cheerio": "^0.22.35",
+    "@types/yargs": "^17.0.33",
+    "bun-plugin-dts": "^0.3.0",
+    "prettier": "^3.5.3",
+    "release-it": "^18.1.2",
+    "yargs": "^17.7.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "ts-pattern": "^5.6.2"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

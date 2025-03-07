@@ -1,0 +1,14 @@
+# deps
+node_modules
+
+# output
+dist
+out
+
+# user input
+apps.json
+
+# user output
+apks
+apps
+downloads

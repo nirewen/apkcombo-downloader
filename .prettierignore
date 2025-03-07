@@ -1,0 +1,11 @@
+# Ignore everything
+/*
+
+# Except
+!.github
+!src
+!scripts
+!.prettierrc
+!tsconfig.json
+!.release-it.json
+! README.md
