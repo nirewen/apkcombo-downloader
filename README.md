@@ -1,5 +1,11 @@
 # APKCD //APK Combo Downloader
 
+[![Downloads][downloads-shield]][downloads-url]
+[![NPM Version][npm-shield]][npm-url]
+![GitHub Workflow Status][ci-status-shield]
+[![Language][language-shield]][language-url]
+[![License][license-shield]][license-url]
+
 APKCD is a CLI tool that allows you to download APKs from APKCombo.app. This repo also provides a npm package [@nirewen/apkcombo-downloader](https://npm.im/@nirewen/apkcombo-downloader) that allows you to download APKs from APKMirror programatically.
 
 This repo and project is based on [APKMD](https://github.com/tanishqmanuja/apkmirror-downloader/) by [tanishqmanuja](https://github.com/tanishqmanuja). If you want more download options, consider using this tool.
@@ -121,7 +127,7 @@ Give a ⭐️ if this project helped you!
 
 ## 💀 Disclaimer
 
-THIS PROJECT IS NOT ASSOCIATED OR ENDORSED BY APKMIRROR. The project is provided "as is" without warranty of any kind, either express or implied. Use at your own risk.
+THIS PROJECT IS NOT ASSOCIATED OR ENDORSED BY APKCOMBO. The project is provided "as is" without warranty of any kind, either express or implied. Use at your own risk.
 
 <!-- Shields -->
 
@@ -132,5 +138,5 @@ THIS PROJECT IS NOT ASSOCIATED OR ENDORSED BY APKMIRROR. The project is provided
 [language-url]: https://www.typescriptlang.org/
 [license-shield]: https://img.shields.io/github/license/nirewen/apkcombo-downloader?style=for-the-badge
 [license-url]: https://github.com/nirewen/apkcombo-downloader/blob/main/LICENSE.md
-[npm-shield]: https://img.shields.io/npm/v/apkmirror-downloader?style=for-the-badge
-[npm-url]: https://www.npmjs.com/package/apkmirror-downloader
+[npm-shield]: https://img.shields.io/npm/v/@nirewen/apkcombo-downloader?style=for-the-badge
+[npm-url]: https://www.npmjs.com/package/@nirewen/apkcombo-downloader
