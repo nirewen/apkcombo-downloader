@@ -149,7 +149,7 @@ export class APKComboDownloader {
     const finalDownloadUrl = await getFinalDownloadUrl(selectedVariant.url);
 
     return fetch(finalDownloadUrl).then(async res => {
-      const filename = extractFileNameFromUrl(finalDownloadUrl);
+      const filename = extractFileNameFromUrl(res);
       const extension = filename.split(".").pop()!;
 
       const outDir = o.outDir ?? ".";
