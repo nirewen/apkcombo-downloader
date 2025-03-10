@@ -1,6 +1,6 @@
 {
   "name": "@nirewen/apkcombo-downloader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Download apk from apkcombo.app with ease",
   "type": "module",
   "module": "dist/index.js",
