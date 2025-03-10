@@ -6,7 +6,8 @@ This repo and project is based on [APKMD](https://github.com/tanishqmanuja/apkmi
 
 # Why a fork with a different APK provider?
 
-APKMirror does have more APKs but recently has added Cloudflare protection which makes it harder to scrape. APKCombo is a good alternative with a lot of APKs and no Cloudflare protection.
+APKMirror does have more APKs but recently has added Cloudflare protection which makes it harder to scrape.\
+APKCombo is a good alternative with a lot of APKs and no Cloudflare protection.
 
 The API and usage is the same as APKMD. You can check below for documentation on using the API and CLI.
 
@@ -107,7 +108,7 @@ Give a ⭐️ if this project helped you!
 ## 👨‍💻 Projects to checkout
 
 1. 📦 [**APKMD**](https://github.com/tanishqmanuja/apkmirror-downloader/) by [**tanishqmanuja**](https://github.com/tanishqmanuja) \
-   Download apps from APKCombo with ease. (Forked to create this project)
+   Download apps from APKMirror with ease. (Forked to create this project)
 
 2. 📦 [**gh-apkmirror-dl**](https://github.com/Yakov5776/gh-apkmirror-dl) by [**Yakov**](https://github.com/Yakov5776) \
    A GitHub Action to download APKs from Apkmirror
